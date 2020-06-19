@@ -18,10 +18,36 @@ font-weight: normal;
 font-style: normal;
 }
 
+@font-face {
+    font-family: 'Montserrat Semibold';
+    src: url('../fonts/Montserrat-SemiBold.eot');
+    src: url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+    url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('Montserrat-Light.eot');
+    src: url('Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+    url('Montserrat-Light.woff') format('woff'),
+    url('Montserrat-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 @mixin bold {
     font-family: 'Montserrat Bold', sans-serif;
 }
 
 @mixin regular {
     font-family: 'Montserrat Regular', sans-serif;
+}
+
+@mixin semibold {
+    font-family: 'Montserrat Semibold', sans-serif;
+}
+
+@mixin light {
+    font-family: 'Montserrat Light', sans-serif;
 }
