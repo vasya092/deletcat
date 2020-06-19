@@ -34,6 +34,12 @@ a, ul, li {
   font-family: 'Montserrat Bold', sans-serif;
 }
 
+@media (max-width: 788px) {
+  .button {
+    font-size: 13px;
+  }
+}
+
 .header {
   display: -ms-grid;
   display: grid;
@@ -49,6 +55,17 @@ a, ul, li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.header-hamburger {
+  display: none;
+}
+
+.header-hamburger .h-line {
+  border-bottom: 3px solid #ffffff;
+  width: 25px;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .header-menu {
@@ -117,6 +134,52 @@ a, ul, li {
 
 .header-wrapper {
   padding-right: 240px;
+}
+
+@media (max-width: 1175px) {
+  .header-menu__list li {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1085px) {
+  .header {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header-logo" "header-menu" "header-text";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-rows: auto auto 100vh;
+        grid-template-rows: auto auto 100vh;
+  }
+  .header-menu, .header-logo {
+    padding: 35px 0 0 0px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .header-wrapper {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 788px) {
+  .header-text {
+    text-align: center;
+  }
+  .header-title {
+    font-size: 36px;
+  }
+  .header-menu__list {
+    display: none;
+  }
+  .header-hamburger {
+    display: block;
+  }
+  .header-subtitle {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
 }
 
 * {
