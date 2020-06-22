@@ -1,0 +1,50 @@
+.footer
+    background-color: #011627
+    padding: 50px 0
+    &__wrapper
+        display: grid
+        grid-template-columns: 2fr 1fr 1fr
+        max-width: 1170px
+        margin: 0 auto
+    &__title
+        font-size: 14px
+        color: #ffffff
+        letter-spacing: 3px
+        text-transform: uppercase
+        margin-bottom: 20px
+    &__item
+        color: $l-white-text-color
+        font-size: $text-size
+        line-height: 1.8
+    &__info
+        padding-right: 140px
+    &__list
+        padding-inline-start: inherit
+        font-size: $text-size
+        color: $l-white-text-color
+        line-height: 1.8
+        list-style: none
+@media (max-width: 1170px)
+    .footer
+        &__wrapper
+            max-width: 1024px
+@media (max-width: 1024px)
+    .footer
+        &__wrapper
+            max-width: 900px
+@media (max-width: 900px)
+    .footer
+        &__wrapper
+            padding: 0px 30px
+            grid-template-columns: 2fr 1fr
+        &__contacts
+            padding-top: 60px
+@media (max-width: 600px)
+    .footer
+        &__wrapper
+            padding: 0px 30px
+            grid-template-columns: 1fr
+        &__contacts
+            padding-top: 0px
+        &__title
+            padding-top: 30px
