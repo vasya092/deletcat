@@ -291,6 +291,18 @@ p {
   line-height: 1.4;
 }
 
+@media (max-width: 1170px) {
+  .item-service {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .item-service {
+    grid-column: span 4;
+  }
+}
+
 .advantages {
   padding-bottom: 80px;
 }
