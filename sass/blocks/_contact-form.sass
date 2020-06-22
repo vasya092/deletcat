@@ -1,0 +1,43 @@
+.contact-form
+    padding: 110px 0
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/contact-form-bg.jpg)
+    background-size: cover
+    &__wrapper
+        max-width: 768px
+        text-align: center
+        margin: 0 auto
+    &__title
+        color: #ffffff
+        font-size: 45px
+    &__subtitle
+        color: $l-white-text-color
+        line-height: 1.8
+        margin-bottom: 30px
+        font-size: $text-size
+    &__input
+        background-color: rgba(255,255,255,0.35)
+        color: white
+        width: 70%
+        margin-right: 15px
+        border-radius: 50px
+        padding: 15px 20px
+        font-size: 15px
+        border-width: 1px
+        &::-webkit-input-placeholder
+            color: rgba(255,255,255,0.4)
+    &__button
+        width: 20%
+
+@media (max-width: 768px)
+    .contact-form
+        &__wrapper
+            max-width: 350px
+        &__input
+            width: 70%
+        &__button
+            width: 20%
+            margin-top: 20px
+            width: auto
+        &__fields
+            display: flex
+            align-items: baseline
