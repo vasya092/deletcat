@@ -244,24 +244,6 @@ p {
   margin-bottom: 30px;
 }
 
-.services__item {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/service-1.jpg);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/service-1.jpg);
-  background-size: cover;
-  color: #ffffff;
-  height: 280px;
-  width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 @media (max-width: 1170px) {
   .services__wrapper {
     max-width: 1024px;
@@ -285,6 +267,28 @@ p {
   .services__item {
     grid-column: span 4;
   }
+}
+
+.item-service {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/service-1.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/service-1.jpg);
+  background-size: cover;
+  color: #ffffff;
+  height: 280px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat Bold', sans-serif;
+  font-size: 15px;
+  padding: 0 50px;
+  line-height: 1.4;
 }
 
 .advantages {
