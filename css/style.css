@@ -88,55 +88,55 @@ p {
   background-position: center center;
 }
 
-.header-hamburger {
+.header__hamburger {
   display: none;
 }
 
-.header-hamburger .h-line {
+.header__hamburger .h-line {
   border-bottom: 3px solid #ffffff;
   width: 25px;
   margin-bottom: 5px;
   display: block;
 }
 
-.header-menu {
+.header__menu {
   padding: 35px 50px 0 0;
   -ms-grid-column-align: end;
       justify-self: end;
 }
 
-.header-menu__list li {
+.header__menu-list li {
   display: inline;
   margin-right: 15px;
   padding: 5px;
   font-size: 15px;
 }
 
-.header-menu__button {
+.header__menu-button {
   font-family: 'Montserrat Regular', sans-serif;
   color: rgba(255, 255, 255, 0.75);
   padding: 10px 20px;
   letter-spacing: normal;
 }
 
-.header-menu a {
+.header__menu a {
   color: rgba(255, 255, 255, 0.75);
 }
 
-.header-logo {
+.header__logo {
   padding: 35px 0 0 50px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header-logo;
 }
 
-.header-menu {
+.header__menu {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: header-menu;
 }
 
-.header-text {
+.header__text {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: header-text;
@@ -145,30 +145,30 @@ p {
   margin: 0 auto;
 }
 
-.header-subtitle, .header-title {
+.header__subtitle, .header__title {
   color: #ffffff;
   font-size: 14px;
 }
 
-.header-title {
+.header__title {
   font-size: 55px;
   font-family: 'Montserrat Bold', sans-serif;
   text-transform: uppercase;
   margin: 20px 0 30px 0;
 }
 
-.header-subtitle {
+.header__subtitle {
   text-transform: uppercase;
   font-family: 'Montserrat Bold', sans-serif;
   letter-spacing: 3px;
 }
 
-.header-wrapper {
+.header__wrapper {
   padding-right: 240px;
 }
 
 @media (max-width: 1175px) {
-  .header-menu__list li {
+  .header__menu__list li {
     margin-right: 0px;
   }
 }
@@ -184,12 +184,12 @@ p {
     -ms-grid-rows: auto auto 100vh;
         grid-template-rows: auto auto 100vh;
   }
-  .header-menu, .header-logo {
+  .header__menu, .header__logo {
     padding: 35px 0 0 0px;
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  .header-wrapper {
+  .header__wrapper {
     padding: 25px;
   }
 }
@@ -198,16 +198,16 @@ p {
   .header-text {
     text-align: center;
   }
-  .header-title {
+  .header__title {
     font-size: 36px;
   }
-  .header-menu__list {
+  .header__menu-list {
     display: none;
   }
-  .header-hamburger {
+  .header__hamburger {
     display: block;
   }
-  .header-subtitle {
+  .header__subtitle {
     font-size: 13px;
     letter-spacing: 2px;
   }
@@ -220,7 +220,7 @@ p {
   text-align: center;
 }
 
-.services-wrapper {
+.services__wrapper {
   max-width: 1170px;
   margin: 0 auto;
   display: -ms-grid;
@@ -232,15 +232,15 @@ p {
   gap: 20px;
 }
 
-.services-desc {
+.services__desc {
   grid-column: span 4;
 }
 
-.services-desc h2 {
+.services__desc h2 {
   margin-bottom: 30px;
 }
 
-.services-item {
+.services__item {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../img/service-1.jpg);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/service-1.jpg);
   background-size: cover;
@@ -259,28 +259,32 @@ p {
 }
 
 @media (max-width: 1170px) {
-  .services-wrapper {
+  .services__wrapper {
     max-width: 1024px;
   }
-  .services-item {
+  .services__item {
     grid-column: span 2;
   }
 }
 
 @media (max-width: 1024px) {
-  .services-wrapper {
+  .services__wrapper {
     max-width: 768px;
   }
 }
 
 @media (max-width: 768px) {
-  .services-wrapper {
+  .services__wrapper {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .services-item {
+  .services__item {
     grid-column: span 4;
   }
+}
+
+.advantages {
+  padding-bottom: 80px;
 }
 
 .advantages__wrapper {

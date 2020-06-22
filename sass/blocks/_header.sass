@@ -8,55 +8,55 @@
     background-repeat: no-repeat
     background-size: cover
     background-position: center center
-    &-hamburger
+    &__hamburger
         display: none
         .h-line
             border-bottom: 3px solid #ffffff
             width: 25px
             margin-bottom: 5px  
             display: block
-    &-menu
+    &__menu
         padding: 35px 50px 0 0
         justify-self: end
-        &__list 
+        &-list 
             li
                 display: inline
                 margin-right: 15px
                 padding: 5px
                 font-size: $menu-text-size
-        &__button
+        &-button
             +regular
             color: $menu-text-color 
             padding: 10px 20px
             letter-spacing: normal
         a
             color: $menu-text-color
-    &-logo
+    &__logo
         padding: 35px 0 0 50px
         grid-area: header-logo
-    &-menu
+    &__menu
         grid-area: header-menu
-    &-text
+    &__text
         grid-area: header-text
         grid-column: span 2
         max-width: 957px
         margin: 0 auto  
-    &-subtitle, &-title
+    &__subtitle, &__title
         color: $white-color
         font-size: $h5-size
-    &-title
+    &__title
         font-size: $h1-size
         +bold
         text-transform: uppercase
         margin: 20px 0 30px 0
-    &-subtitle
+    &__subtitle
         text-transform: uppercase
         +bold
         letter-spacing: 3px
-    &-wrapper
+    &__wrapper
         padding-right: 240px
 @media (max-width: 1175px)
-    .header-menu__list li
+    .header__menu__list li
         margin-right: 0px
 @media (max-width: 1085px)
     .header
@@ -64,21 +64,21 @@
         grid-template-areas: "header-logo" "header-menu" "header-text"
         justify-content: center
         grid-template-rows: auto auto 100vh
-        &-menu, &-logo
+        &__menu, &__logo
             padding: 35px 0 0 0px
             justify-self: center
-        &-wrapper
+        &__wrapper
             padding: 25px
 @media (max-width: 788px)
     .header
         &-text
-            text-align: center;
-        &-title
+            text-align: center
+        &__title
             font-size: $mobile-h1-size
-        &-menu__list
+        &__menu-list
             display: none
-        &-hamburger
+        &__hamburger
             display: block
-        &-subtitle
+        &__subtitle
             font-size: $mobile-h5-size
             letter-spacing: 2px

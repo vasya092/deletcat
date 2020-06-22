@@ -2,19 +2,19 @@
     background: #f9f9f9
     padding-top: 50px
     padding-bottom: 120px
-    &-wrapper
+    &__wrapper
         max-width: 1170px
         margin: 0 auto
         display: grid
         grid-template-columns: 1fr 1fr 1fr 1fr
         grid-template-rows: 2fr3fr 3fr
         gap: 20px
-    &-desc
+    &__desc
         grid-column: span 4
         h2
             margin-bottom: 30px
     text-align: center
-    &-item
+    &__item
         background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/service-1.jpg)
         background-size: cover
         color: $white-color
@@ -26,20 +26,20 @@
 
 @media (max-width: 1170px)
     .services
-        &-wrapper
+        &__wrapper
             max-width: 1024px
-        &-item
+        &__item
             grid-column: span 2
 
 @media (max-width: 1024px)
     .services
-        &-wrapper
+        &__wrapper
             max-width: 768px
 
 @media (max-width: 768px)
     .services
-        &-wrapper
+        &__wrapper
             padding-left: 20px
             padding-right: 20px
-        &-item 
+        &__item 
             grid-column: span 4
