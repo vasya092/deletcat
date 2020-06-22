@@ -1,0 +1,21 @@
+.job-steps
+    background-color: #f9f9f9
+    padding: 110px 0
+    &__title
+        text-align: center
+        margin-bottom: 90px
+    &__wrapper
+        max-width: 1024px
+        margin: 0 auto
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 50px
+@media (max-width: 1024px)
+    .job-steps
+        &__wrapper
+            max-width: 768px
+@media (max-width: 768px)
+    .job-steps
+        &__wrapper
+            grid-template-columns: 1fr
+            max-width: 350px
