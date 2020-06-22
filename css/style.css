@@ -425,6 +425,32 @@ p {
   line-height: 1.8;
 }
 
+.about {
+  max-width: 1024px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 110px 0;
+}
+
+.about__desc {
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(1, 22, 39, 0.75);
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .about {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    max-width: 350px;
+  }
+}
+
 * {
   -webkit-box-sizing: border;
           box-sizing: border;
